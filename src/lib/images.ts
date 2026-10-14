@@ -47,7 +47,8 @@ export function getFileUrl(recordId: string, filename: string, thumb?: string): 
 import cnnCoverImg from '../assets/captura-de-tela-2026-10-07-191838-cdf91.png'
 import tecmundoEstadaoCoverImg from '../assets/captura-de-tela-2026-10-07-191956-93749.png'
 import diarioNordesteCoverImg from '../assets/captura-de-tela-2026-10-07-192027-116b2.png'
-import rayssaPortraitImg from '../assets/4-6c579.jpeg'
+import avatarCamilaImg from '../assets/imagemgerada1791989791946-f5d05.png'
+import heroCamilaImg from '../assets/camila-e4482.png'
 import payoutPixUsdtImg from '../assets/imagemgerada1791414158612-d8c4a.png'
 
 export const LANDING_IMAGES = {
@@ -56,21 +57,21 @@ export const LANDING_IMAGES = {
     tecmundoEstadao: tecmundoEstadaoCoverImg,
     diarioNordeste: diarioNordesteCoverImg,
   },
-  // Foto de retrato oficial do parceiro (configurada em src/config/site.ts)
+  // Foto de retrato oficial do parceiro (Camila Silva - selfie circular com suporte e esfregão)
   logo: {
-    recordId: 'rayssa_nascimento_portrait',
-    filename: '4-6c579.jpeg',
-    url: rayssaPortraitImg,
-    thumb: rayssaPortraitImg,
-    fallbackUrl: getFileUrl('ezupxqgn9idesxp', 'logo_fpf5eun48d.jpg'),
+    recordId: 'camila_silva_avatar',
+    filename: 'imagemgerada1791989791946-f5d05.png',
+    url: avatarCamilaImg,
+    thumb: avatarCamilaImg,
+    fallbackUrl: avatarCamilaImg,
   },
-  // Hero: Imagem principal / arte sci-fi neon (configurada em src/config/site.ts)
+  // Hero: Imagem principal / arte sci-fi com Camila Silva
   heroBg: {
-    recordId: 'makqmcwi65rllwk',
-    filename: 'imagemgerada1791407667490-15f6d.png',
-    url: new URL('../assets/imagemgerada1791407667490-15f6d.png', import.meta.url).href,
-    thumb: new URL('../assets/imagemgerada1791407667490-15f6d.png', import.meta.url).href,
-    fallbackUrl: getFileUrl('makqmcwi65rllwk', 'hero_bg_6iqeoy4vnk.png'),
+    recordId: 'camila_silva_hero',
+    filename: 'camila-e4482.png',
+    url: heroCamilaImg,
+    thumb: heroCamilaImg,
+    fallbackUrl: heroCamilaImg,
   },
   // Foto Realista 1: Mãos dobrando camiseta azul ("Sua rotina pode treinar o futuro" - tarefas reais / IA física)
   foldingClothes: {

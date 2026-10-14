@@ -18,25 +18,25 @@
  * ============================================================================
  */
 
-import defaultHeroArt from '@/assets/imagemgerada1791407667490-15f6d.png'
-import defaultPortraitImg from '@/assets/4-6c579.jpeg'
+import heroCamilaImg from '@/assets/camila-e4482.png'
+import avatarCamilaImg from '@/assets/imagemgerada1791989791946-f5d05.png'
 
 export interface SiteConfig {
   /** Dados da marca e do parceiro titular desta página */
   partner: {
-    /** Nome completo do parceiro (ex.: "Rayssa Nascimento") */
+    /** Nome completo do parceiro (ex.: "Camila Silva") */
     name: string
-    /** Nome da marca / iniciativa exibida no topo e no rodapé (ex.: "Rayssa Nascimento Renda Extra") */
+    /** Nome da marca / iniciativa exibida no topo e no rodapé (ex.: "Camila Silva Renda Extra") */
     brandName: string
-    /** Primeira linha do logotipo (ex.: "RAYSSA NASCIMENTO") */
+    /** Primeira linha do logotipo (ex.: "CAMILA SILVA") */
     logoLine1: string
     /** Segunda linha em destaque dourado do logotipo (ex.: "RENDA EXTRA") */
     logoLine2: string
-    /** Monograma / iniciais para fallback caso a foto não carregue (ex.: "RN") */
+    /** Monograma / iniciais para fallback caso a foto não carregue (ex.: "CS") */
     monogramFallback: string
-    /** Texto curto de parceria com a Mimix (ex.: "Parceria Rayssa Nascimento / Mimix") */
+    /** Texto curto de parceria (ex.: "Camila Silva / Mimix e Hub") */
     partnershipLabel: string
-    /** Texto da badge do Hero (ex.: "Iniciativa Rayssa Nascimento / Mimix") */
+    /** Texto da badge do Hero (ex.: "Iniciativa Camila Silva / Mimix e Hub") */
     heroBadgeLabel: string
     /** Texto de crédito no rodapé */
     footerCredit: string
@@ -47,14 +47,14 @@ export interface SiteConfig {
   /** Imagens principais que costumam variar por cópia */
   images: {
     /**
-     * Imagem principal do Hero (arte sci-fi neon centralizada).
+     * Imagem principal do Hero (foto identificada como camila com overlay sci-fi neon).
      * Pode ser um import de imagem local (ex.: de src/assets) ou uma URL pública.
      */
     heroImage: string
     /** Texto alternativo da imagem do Hero */
     heroImageAlt: string
     /**
-     * Foto de retrato/avatar do parceiro exibida no cabeçalho circular.
+     * Foto de retrato/avatar do parceiro exibida no cabeçalho circular (primeira foto).
      */
     avatarImage: string
     /** Texto alternativo do avatar */
@@ -75,13 +75,20 @@ export interface SiteConfig {
 
     /**
      * Cadastro Mimix com referência do parceiro:
-     * O campo `ref` é o código de indicação do parceiro (ex.: "equipedesucesso").
-     * A URL final `mimixRegister` é gerada automaticamente combinando a baseUrl com o ref.
+     * https://mimix-ai.xyz/register?ref=camillatreinandoia
      */
     mimix: {
       baseUrl: string
       ref: string
       get registerUrl(): string
+    }
+
+    /**
+     * Link da plataforma parceira Hub:
+     * https://ai.hub.xyz/r/CAMIIA
+     */
+    hub: {
+      registerUrl: string
     }
 
     /** Links de matérias jornalísticas de comprovação (CNN, TecMundo, Estadão, etc.) */
@@ -122,43 +129,49 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   partner: {
-    name: 'Rayssa Nascimento',
-    brandName: 'Rayssa Nascimento Renda Extra',
-    logoLine1: 'RAYSSA NASCIMENTO',
+    name: 'Camila Silva',
+    brandName: 'Camila Silva Renda Extra',
+    logoLine1: 'CAMILA SILVA',
     logoLine2: 'RENDA EXTRA',
-    monogramFallback: 'RN',
-    partnershipLabel: 'Parceria Rayssa Nascimento / Mimix',
-    heroBadgeLabel: 'Iniciativa Rayssa Nascimento / Mimix',
-    footerCredit: 'Página criada por Rayssa Nascimento Renda Extra',
+    monogramFallback: 'CS',
+    partnershipLabel: 'Camila Silva / Mimix e Hub',
+    heroBadgeLabel: 'Camila Silva / Mimix e Hub',
+    footerCredit: 'Página criada por Camila Silva Renda Extra',
     referralCredit:
-      'Cadastro gratuito pela plataforma parceira Mimix — indicação Rayssa Nascimento Renda Extra · Dúvidas? O suporte gratuito te ajuda.',
+      'Cadastro gratuito pelas plataformas parceiras Mimix e Hub — indicação Camila Silva Renda Extra · Dúvidas? O suporte gratuito te ajuda.',
   },
 
   images: {
-    // Arte Sci-Fi Neon original ("RENDA EXTRA") centralizada no Hero
-    heroImage: defaultHeroArt,
-    heroImageAlt: 'Mimix — Ganhe gravando seu dia a dia. Arte sci-fi neon original.',
+    // Imagem Hero: Mulher lavando louça com overlay futurista holográfico e "Com Camila Silva"
+    heroImage: heroCamilaImg,
+    heroImageAlt:
+      'Renda Extra tarefas residenciais e comerciais com Camila Silva — IA Física e Robótica',
 
-    // Retrato do parceiro exibido no header
-    avatarImage: defaultPortraitImg,
-    avatarImageAlt: 'Rayssa Nascimento — Renda Extra',
+    // Foto circular de topo/avatar: selfie circular com suporte de celular na cabeça e esfregão
+    avatarImage: avatarCamilaImg,
+    avatarImageAlt: 'Camila Silva — Renda Extra',
 
-    // Caminho da imagem de compartilhamento absoluta em public/ (preserva a visualização no WhatsApp sem cofrinho)
-    ogImage: '/og-image.jpg',
+    // Caminho da imagem de compartilhamento absoluta em public/ (Imagem Hero com Camila Silva)
+    ogImage: '/camila-e4482.png',
     favicon: '/favicon.png',
   },
 
   links: {
     // Link do grupo de WhatsApp — replicado em TODOS os botões
-    whatsappGroup: 'https://chat.whatsapp.com/BcEfAKAnpDv3kGTQl46Tq3?s=qt&p=i&mlu=0&iam=0',
+    whatsappGroup: 'https://chat.whatsapp.com/Hs95mOzWY7V47Yfy3w2Xsy?s=cl&p=i&mlu=0&ilr=4&iam=2',
 
-    // Cadastro Mimix com o parâmetro 'ref' isolado para fácil substituição por cada parceiro
+    // Cadastro Mimix com o parâmetro 'ref=camillatreinandoia'
     mimix: {
       baseUrl: 'https://mimix-ai.xyz/register',
-      ref: 'equipedesucesso',
+      ref: 'camillatreinandoia',
       get registerUrl() {
         return `${this.baseUrl}?ref=${encodeURIComponent(this.ref)}`
       },
+    },
+
+    // Link oficial da Hub
+    hub: {
+      registerUrl: 'https://ai.hub.xyz/r/CAMIIA',
     },
 
     // Notícias reais de comprovação
@@ -180,17 +193,19 @@ export const siteConfig: SiteConfig = {
   },
 
   meta: {
-    title: 'Rayssa Nascimento Renda Extra — Parceria Rayssa Nascimento / Mimix',
+    title: 'Camila Silva Renda Extra — Camila Silva / Mimix e Hub',
     description:
-      'Rayssa Nascimento / Mimix: ganhe uma renda extra gravando dados para treinar IA, dados Residencial e Comercial',
-    ogTitle: 'Rayssa Nascimento Renda Extra',
+      'Camila Silva / Mimix e Hub: ganhe uma renda extra gravando tarefas do dia a dia para treinar IA física, tarefas residenciais e comerciais.',
+    ogTitle: 'Camila Silva Renda Extra',
     ogDescription:
-      'Renda extra gravando tarefas do dia a dia para treinar IA física. Acesse o link e entre no suporte para fazer seu cadastro gratuito.',
-    ogImageAlt: 'Rayssa Nascimento Renda Extra — Parceria Mimix e IA Física',
-    twitterTitle: 'Rayssa Nascimento Renda Extra',
+      'Renda extra gravando tarefas residenciais e comerciais para treinar IA física. Acesse os links oficiais da Mimix e Hub e participe com suporte gratuito no WhatsApp.',
+    ogImageAlt:
+      'Camila Silva Renda Extra — Atividades e Tarefas Residenciais e Comerciais com Camila Silva',
+    twitterTitle: 'Camila Silva Renda Extra',
     twitterDescription:
-      'Renda extra gravando tarefas do dia a dia para treinar IA física. Pagamentos via Pix e USDT todo dia 5 e dia 20 em parceria com Rayssa Nascimento e Mimix.',
-    keywords: 'Renda Extra, Rayssa Nascimento, Mimix, IA Física, Pix, USDT, Gravação de Tarefas',
+      'Renda extra gravando tarefas do dia a dia para treinar IA física. Pagamentos via Pix e USDT em parceria com Camila Silva / Mimix e Hub.',
+    keywords:
+      'Renda Extra, Camila Silva, Mimix, Hub, IA Física, Pix, USDT, Gravação de Tarefas, Tarefas Residenciais e Comerciais',
     canonicalUrl: 'https://revisao-de-landing-page-copy-83dcd.goskip.app',
   },
 }

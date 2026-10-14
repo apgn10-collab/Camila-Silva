@@ -24,7 +24,7 @@ export const FinalConversion = ({ finalBgUrl }: FinalConversionProps) => {
             {/* Pill */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#00ff88]/10 border border-[#00ff88]/40 text-[#00ff88] mb-5 shadow-[0_0_12px_rgba(0,255,136,0.15)]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#00ff88] shadow-[0_0_8px_#00ff88] animate-pulse-dot" />
-              <span>INSCRIÇÃO GUIADA MIMIX</span>
+              <span>INSCRIÇÃO GUIADA • MIMIX E HUB</span>
             </div>
 
             {/* Title */}

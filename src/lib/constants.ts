@@ -7,5 +7,6 @@ import { siteConfig } from '@/config/site'
 export const LANDING_LINKS = {
   whatsappGroup: siteConfig.links.whatsappGroup,
   mimixRegister: siteConfig.links.mimix.registerUrl,
+  hubRegister: siteConfig.links.hub.registerUrl,
   news: siteConfig.links.news,
 } as const

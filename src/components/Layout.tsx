@@ -86,12 +86,12 @@ export const Layout = ({ children }: LayoutProps) => {
           <div className="max-w-[780px] mx-auto text-center space-y-3">
             <p className="text-[0.82rem] leading-relaxed text-[#94a3b8]">
               {partner.footerCredit} © <span>{currentYear}</span> — Todos os direitos reservados.
-              Mimix é uma plataforma parceira. Esta página não garante ganhos; os valores citados
-              vêm das matérias de notícias vinculadas e variam conforme plataforma, região e volume
-              aprovado.
+              Mimix e Hub são plataformas parceiras. Esta página não garante ganhos; os valores
+              citados vêm das matérias de notícias vinculadas e variam conforme plataforma, região e
+              volume aprovado.
             </p>
             <p className="text-xs text-[#64748b]">
-              Mimix é uma plataforma parceira · Dúvidas? O suporte gratuito te ajuda.
+              {partner.partnershipLabel} · Dúvidas? O suporte gratuito te ajuda.
             </p>
           </div>
         </footer>

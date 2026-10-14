@@ -48,11 +48,10 @@ export const Header = ({ logoUrl = siteConfig.images.avatarImage }: HeaderProps)
                 </span>
               </div>
               <div className="text-xs sm:text-[0.95rem] font-semibold text-[#00ff88] tracking-wide leading-tight drop-shadow-[0_0_10px_rgba(0,255,136,0.35)]">
-                em parceria com a Mimix
+                {partner.partnershipLabel}
               </div>
             </div>
           </div>
-
           {/* DIREITA: Chip indicador de parceria oficial */}
           <div className="hidden sm:flex items-center">
             <div
@@ -62,7 +61,7 @@ export const Header = ({ logoUrl = siteConfig.images.avatarImage }: HeaderProps)
               <span aria-hidden="true">🤝</span>
               <span>{partner.partnershipLabel}</span>
             </div>
-          </div>
+          </div>{' '}
         </nav>
       </div>
     </header>

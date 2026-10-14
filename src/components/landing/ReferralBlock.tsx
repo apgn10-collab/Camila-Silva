@@ -57,68 +57,104 @@ export const ReferralBlock = () => {
               </div>
             </div>
 
-            {/* Passo 2 - Optional Shortcut Card */}
+            {/* Passo 2 - Plafatormas Parceiras Oficiais: Mimix e Hub */}
             <div className="bg-[#0b111a]/85 border border-[#00e5ff]/35 rounded-2xl p-5 sm:p-7 mb-6 text-center shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-200 hover:border-[#00e5ff] hover:shadow-[0_10px_35px_rgba(0,0,0,0.6),0_0_20px_rgba(0,229,255,0.15)]">
               <h3 className="text-lg sm:text-xl font-bold text-[#f1f5f9] mb-2 flex items-center justify-center gap-2 flex-wrap">
                 <span>
-                  2️⃣ Quer adiantar? O cadastro gratuito já está aqui embaixo — é só acessar:
+                  2️⃣ Quer adiantar? Os cadastros oficiais já estão aqui embaixo — é só acessar:
                 </span>
               </h3>
 
-              <p className="text-[#94a3b8] text-sm sm:text-base leading-relaxed max-w-[620px] mx-auto mb-5">
-                Não precisa copiar nada: toque no botão e você já vai direto para a página de
-                cadastro.
+              <p className="text-[#94a3b8] text-sm sm:text-base leading-relaxed max-w-[620px] mx-auto mb-6">
+                Não precisa copiar nada: toque no link de cada plataforma oficial para abrir seu
+                cadastro gratuito.
               </p>
 
-              <div>
-                <a
-                  href={registerUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-extrabold text-sm sm:text-base text-[#021a0e] bg-gradient-to-br from-[#00ff88] to-[#00d26a] shadow-[0_0_25px_rgba(0,255,136,0.5)] transition-all duration-200 hover:-translate-y-1 hover:scale-105"
-                  aria-label="Ir direto para o cadastro gratuito da Mimix"
-                >
-                  <span>Ir direto para o cadastro gratuito</span>
-                  <svg
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
-
-              {/* Clickable visible URL text */}
-              <div className="mt-4 inline-flex items-center justify-center gap-2 px-4 py-2 bg-[#060a10]/85 border border-[#00ff88]/30 rounded-xl max-w-full overflow-hidden">
-                <span className="text-xs sm:text-sm text-[#94a3b8]">Link:</span>
-                <a
-                  href={registerUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-mono text-xs sm:text-sm font-bold text-[#00ff88] underline underline-offset-4 decoration-1 break-all hover:text-[#55ffb2] hover:drop-shadow-[0_0_12px_rgba(0,255,136,0.7)]"
-                  title="Abrir página oficial de cadastro da Mimix"
-                >
-                  {registerUrl}
-                </a>
-              </div>
-
-              {/* Aviso de segurança e domínio oficial */}
-              <div className="mt-3 flex items-center justify-center gap-1.5 text-xs text-[#94a3b8]">
-                <span aria-hidden="true">ⓘ</span>
-                <span>
-                  Cadastro e login acontecem sempre no site oficial{' '}
+              {/* Grid com os 2 links: Mimix e Hub */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[700px] mx-auto mb-4">
+                {/* Mimix */}
+                <div className="flex flex-col items-center justify-between p-4 rounded-xl bg-[#070c14] border border-[#00ff88]/30">
+                  <div className="mb-3 text-center">
+                    <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#00ff88]">
+                      Plataforma 1
+                    </span>
+                    <h4 className="text-base font-bold text-white">Mimix</h4>
+                  </div>
                   <a
                     href={registerUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-bold text-white hover:text-[#00ff88] underline underline-offset-2 transition-colors"
+                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-extrabold text-sm text-[#021a0e] bg-gradient-to-br from-[#00ff88] to-[#00d26a] shadow-[0_0_18px_rgba(0,255,136,0.4)] transition-all duration-200 hover:-translate-y-0.5 hover:scale-102"
+                    aria-label="Ir direto para o cadastro oficial da Mimix"
                   >
-                    mimix-ai.xyz
+                    <span>Cadastro Mimix</span>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
                   </a>
+                  <a
+                    href={registerUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2.5 font-mono text-xs text-[#00ff88] underline underline-offset-2 break-all hover:text-[#55ffb2]"
+                    title="Link oficial da Mimix"
+                  >
+                    {registerUrl}
+                  </a>
+                </div>
+
+                {/* Hub */}
+                <div className="flex flex-col items-center justify-between p-4 rounded-xl bg-[#070c14] border border-[#00e5ff]/35">
+                  <div className="mb-3 text-center">
+                    <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#00e5ff]">
+                      Plataforma 2
+                    </span>
+                    <h4 className="text-base font-bold text-white">Hub</h4>
+                  </div>
+                  <a
+                    href={links.hub.registerUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-extrabold text-sm text-[#021a0e] bg-gradient-to-br from-[#00e5ff] to-[#00b4d8] shadow-[0_0_18px_rgba(0,229,255,0.4)] transition-all duration-200 hover:-translate-y-0.5 hover:scale-102"
+                    aria-label="Ir direto para o cadastro oficial da Hub"
+                  >
+                    <span>Cadastro Hub</span>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                  <a
+                    href={links.hub.registerUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2.5 font-mono text-xs text-[#00e5ff] underline underline-offset-2 break-all hover:text-[#67e8f9]"
+                    title="Link oficial da Hub"
+                  >
+                    {links.hub.registerUrl}
+                  </a>
+                </div>
+              </div>
+
+              {/* Aviso de segurança */}
+              <div className="mt-3 flex items-center justify-center gap-1.5 text-xs text-[#94a3b8]">
+                <span aria-hidden="true">ⓘ</span>
+                <span>
+                  Cadastros oficiais em <strong className="text-white">Mimix</strong> (mimix-ai.xyz)
+                  e <strong className="text-white">Hub</strong> (ai.hub.xyz).
                 </span>
               </div>
             </div>
