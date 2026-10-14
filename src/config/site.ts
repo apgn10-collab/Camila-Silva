@@ -142,16 +142,16 @@ export const siteConfig: SiteConfig = {
   },
 
   images: {
-    // Imagem Hero: Primeira foto agora no Hero — selfie com suporte de celular na cabeça e vassoura/roupas
-    heroImage: avatarCamilaImg,
+    // Imagem Hero: Foto da mulher na pia da cozinha lavando louça com overlay futurista holográfico
+    heroImage: heroCamilaImg,
     heroImageAlt:
       'Renda Extra tarefas residenciais e comerciais com Camila Silva — gravação em primeira pessoa e IA física',
 
-    // Foto circular de topo/avatar: Segunda foto agora no avatar — Camila na pia da cozinha
-    avatarImage: heroCamilaImg,
+    // Foto circular de topo/avatar: Selfie com suporte de celular laranja na cabeça
+    avatarImage: avatarCamilaImg,
     avatarImageAlt: 'Camila Silva — Renda Extra',
 
-    // Caminho da imagem de compartilhamento absoluta em public/ (Imagem Hero atualizada)
+    // Caminho da imagem de compartilhamento absoluta em public/ (Imagem Hero)
     ogImage: '/og-camila-hero.png',
     favicon: '/favicon.png',
   },

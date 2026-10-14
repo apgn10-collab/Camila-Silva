@@ -57,21 +57,21 @@ export const LANDING_IMAGES = {
     tecmundoEstadao: tecmundoEstadaoCoverImg,
     diarioNordeste: diarioNordesteCoverImg,
   },
-  // Foto de retrato oficial do parceiro / avatar no cabeçalho (segunda foto - Camila)
+  // Foto de retrato oficial do parceiro / avatar no cabeçalho (selfie com suporte laranja)
   logo: {
     recordId: 'camila_silva_avatar',
-    filename: 'camila-e4482.png',
-    url: heroCamilaImg,
-    thumb: heroCamilaImg,
-    fallbackUrl: heroCamilaImg,
-  },
-  // Hero: Imagem principal agora com a primeira foto (selfie com suporte na cabeça e vassoura)
-  heroBg: {
-    recordId: 'camila_silva_hero',
     filename: 'imagemgerada1791989791946-f5d05.png',
     url: avatarCamilaImg,
     thumb: avatarCamilaImg,
     fallbackUrl: avatarCamilaImg,
+  },
+  // Hero: Imagem principal com a mulher na pia da cozinha lavando louça
+  heroBg: {
+    recordId: 'camila_silva_hero',
+    filename: 'camila-e4482.png',
+    url: heroCamilaImg,
+    thumb: heroCamilaImg,
+    fallbackUrl: heroCamilaImg,
   },
   // Foto Realista 1: Mãos dobrando camiseta azul ("Sua rotina pode treinar o futuro" - tarefas reais / IA física)
   foldingClothes: {
@@ -117,12 +117,12 @@ export const LANDING_IMAGES = {
     url: new URL('../assets/minute-21ed1.jpeg', import.meta.url).href,
     thumb: new URL('../assets/minute-21ed1.jpeg', import.meta.url).href,
   },
-  // Passo 2 de "Como Funciona": Foto da mulher com suporte de cabeça (head-mount) gravando tarefas cotidianas
+  // Passo 2 de "Como Funciona": Foto real da mulher com suporte de cabeça laranja segurando vassoura e roupas
   howItWorksRecordTask: {
     recordId: 'woman_headmount_recording',
-    filename: '1-0dcd3.jpeg',
-    url: new URL('../assets/1-0dcd3.jpeg', import.meta.url).href,
-    thumb: new URL('../assets/1-0dcd3.jpeg', import.meta.url).href,
+    filename: 'imagemgerada1791989791946-f5d05.png',
+    url: avatarCamilaImg,
+    thumb: avatarCamilaImg,
   },
   // Passo 3 de "Como Funciona": Nova Arte "PAGAMENTO VIA PIX / PAGAMENTO VIA USDT" (dia 5 e dia 20 de cada mês)
   howItWorksPayoutPixUsdt: {
