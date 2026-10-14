@@ -142,17 +142,17 @@ export const siteConfig: SiteConfig = {
   },
 
   images: {
-    // Imagem Hero: Mulher lavando louça com overlay futurista holográfico e "Com Camila Silva"
-    heroImage: heroCamilaImg,
+    // Imagem Hero: Primeira foto agora no Hero — selfie com suporte de celular na cabeça e vassoura/roupas
+    heroImage: avatarCamilaImg,
     heroImageAlt:
-      'Renda Extra tarefas residenciais e comerciais com Camila Silva — IA Física e Robótica',
+      'Renda Extra tarefas residenciais e comerciais com Camila Silva — gravação em primeira pessoa e IA física',
 
-    // Foto circular de topo/avatar: selfie circular com suporte de celular na cabeça e esfregão
-    avatarImage: avatarCamilaImg,
+    // Foto circular de topo/avatar: Segunda foto agora no avatar — Camila na pia da cozinha
+    avatarImage: heroCamilaImg,
     avatarImageAlt: 'Camila Silva — Renda Extra',
 
-    // Caminho da imagem de compartilhamento absoluta em public/ (Imagem Hero com Camila Silva)
-    ogImage: '/camila-e4482.png',
+    // Caminho da imagem de compartilhamento absoluta em public/ (Imagem Hero atualizada)
+    ogImage: '/og-camila-hero.png',
     favicon: '/favicon.png',
   },
 

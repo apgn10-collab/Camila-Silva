@@ -39,11 +39,11 @@ export const Hero = ({ heroBgUrl = siteConfig.images.heroImage }: HeroProps) => 
             style={{ backgroundImage: `url(${heroBgUrl})` }}
           />
 
-          <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] md:aspect-[16/9] lg:aspect-[21/9] min-h-[260px] sm:min-h-[360px] md:min-h-[460px] max-h-[620px] flex items-center justify-center p-2 sm:p-4 md:p-6 overflow-hidden">
+          <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] md:aspect-[16/9] lg:aspect-[21/9] min-h-[280px] sm:min-h-[380px] md:min-h-[500px] max-h-[640px] flex items-center justify-center p-2 sm:p-4 md:p-6 overflow-hidden">
             <img
               src={heroBgUrl}
               alt={images.heroImageAlt}
-              className="relative z-10 max-w-full max-h-full w-auto h-auto object-contain object-center transition-transform duration-700 ease-out group-hover:scale-[1.01] drop-shadow-[0_10px_35px_rgba(0,255,136,0.25)]"
+              className="relative z-10 max-w-full max-h-full w-auto h-auto object-contain object-center rounded-xl transition-transform duration-700 ease-out group-hover:scale-[1.01] drop-shadow-[0_10px_35px_rgba(0,255,136,0.25)]"
               loading="eager"
               fetchPriority="high"
             />

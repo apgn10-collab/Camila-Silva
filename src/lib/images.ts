@@ -57,21 +57,21 @@ export const LANDING_IMAGES = {
     tecmundoEstadao: tecmundoEstadaoCoverImg,
     diarioNordeste: diarioNordesteCoverImg,
   },
-  // Foto de retrato oficial do parceiro (Camila Silva - selfie circular com suporte e esfregão)
+  // Foto de retrato oficial do parceiro / avatar no cabeçalho (segunda foto - Camila)
   logo: {
     recordId: 'camila_silva_avatar',
-    filename: 'imagemgerada1791989791946-f5d05.png',
-    url: avatarCamilaImg,
-    thumb: avatarCamilaImg,
-    fallbackUrl: avatarCamilaImg,
-  },
-  // Hero: Imagem principal / arte sci-fi com Camila Silva
-  heroBg: {
-    recordId: 'camila_silva_hero',
     filename: 'camila-e4482.png',
     url: heroCamilaImg,
     thumb: heroCamilaImg,
     fallbackUrl: heroCamilaImg,
+  },
+  // Hero: Imagem principal agora com a primeira foto (selfie com suporte na cabeça e vassoura)
+  heroBg: {
+    recordId: 'camila_silva_hero',
+    filename: 'imagemgerada1791989791946-f5d05.png',
+    url: avatarCamilaImg,
+    thumb: avatarCamilaImg,
+    fallbackUrl: avatarCamilaImg,
   },
   // Foto Realista 1: Mãos dobrando camiseta azul ("Sua rotina pode treinar o futuro" - tarefas reais / IA física)
   foldingClothes: {

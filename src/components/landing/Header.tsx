@@ -26,7 +26,7 @@ export const Header = ({ logoUrl = siteConfig.images.avatarImage }: HeaderProps)
                 <img
                   src={logoUrl}
                   alt={images.avatarImageAlt}
-                  className="w-full h-full object-cover object-[center_20%] block rounded-full"
+                  className="w-full h-full object-cover object-[center_25%] block rounded-full"
                   loading="eager"
                   onError={() => setLogoError(true)}
                 />
